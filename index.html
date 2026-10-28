@@ -1,285 +1,344 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Pribadi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Nurmah</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="#beranda">
-                    Portofolio Saya
-                </a>
-                <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#menuNavigasi"
-                        aria-controls="menuNavigasi"
-                        aria-expanded="false"
-                        aria-label="Buka menu navigasi">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menuNavigasi">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#beranda">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#tentang">Tentang</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#proyek">Proyek</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#kontak">Kontak</a>
-                        </li>
-                    </ul>
-                </div>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#beranda">Portofolio Nurmah</a>
+      <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNavbar"
+            aria-controls="menuNavbar"
+            aria-expanded="false"
+            aria-label="Buka navigasi">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#beranda">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang Saya</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyek">Proyek</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section id="beranda" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-5 text-center">
+            <img src="img/foto.jpeg"
+             alt="Foto profil Nurmah"
+             class="foto-profil">
             </div>
-        </nav>
-    </header>
-    <main>
-        <section id="beranda" class="bg-light py-5">
-            <div class="container py-4">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <p class="text-primary fw-bold mb-2">
-                            HALO, SELAMAT DATANG!
-                        </p>
-                        <h1 class="display-5 fw-bold">
-                            <span class="text-primary">Nama saya Nurmah</span>
-                        </h1>
-                        <h2 class="h4 text-secondary mb-3">
-                            Mahasiswa Informatika
-                        </h2>
-                        <p class="lead">
-                            Saat ini saya sedang belajar pemrograman, desain,
-                            dan pengembangan website. Website ini
-                            merupakan portofolio pribadi saya.
-                        </p>
-                        <a href="#proyek" class="btn btn-primary me-2">
-                            Lihat Proyek
-                        </a>
-                        <button type="button" class="btn btn-outline-primary"
-                                data-bs-toggle="modal"
-                                data-bs-target="#modalProfil">
-                            Tentang Saya
-                        </button>
-                    </div>
-                </div>
+            <div class="col-md-7">
+              <p class="eyebrow">Selamat Datang</p>
+              <h1 class="fw-bold">Halo, saya Nurmah</h1>
+              <h4 class="subtitle">Mahasiswa Informatika</h4>
+              <p>
+                Saat ini saya sedang belajar membuat website dan mengembangkan
+                keterampilan di bidang teknologi.
+              </p>
+              <a href="#proyek" class="btn btn-primary">
+                Lihat Proyek Saya
+              </a>
             </div>
-        </section>
-        <section id="tentang" class="py-5">
-            <div class="container">
-                <h2 class="text-center fw-bold mb-3">Tentang Saya</h2>
-                <p class="text-center text-secondary mx-auto"
-                   style="max-width: 700px;">
-                    Saya adalah seorang mahasiswa jurusan Informatika 
-                    universitas sulawesi barat yang tertarik
-                    mempelajari teknologi, pemprograman, dan pembuatan
-                    website. Saya ingin terus mengembangkan kemampuan
-                    melalui berbagai proyek.
-                </p>
-            </div>
-        </section>
-        <section id="proyek" class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center fw-bold mb-2">Proyek Saya</h2>
-                <p class="text-center text-secondary mb-4">
-                    Beberapa proyek yang pernah saya pelajari.
-                </p>
-                <div class="row g-4">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">
-                                    Website Perpustakaan
-                                </h3>
-                                <p class="card-text">
-                                    Website sederhana untuk menampilkan
-                                    informasi dan data perpustakaan.
-                                </p>
-                                <button type="button"
-                                        class="btn btn-primary btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#modalProyek1">
-                                    Lihat Detail
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">
-                                    Desain UI/UX
-                                </h3>
-
-                                <p class="card-text">
-                                    Rancangan tampilan aplikasi yang
-                                    sederhana dan mudah digunakan.
-                                </p>
-                                <button type="button"
-                                        class="btn btn-primary btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#modalProyek2">
-                                    Lihat Detail
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">
-                                    Program Java
-                                </h3>
-                                <p class="card-text">
-                                    Program latihan untuk mempelajari
-                                    dasar pemrograman dan algoritma.
-                                </p>
-                                <button type="button"
-                                        class="btn btn-primary btn-sm"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#modalProyek3">
-                                    Lihat Detail
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="kontak" class="py-5">
-            <div class="container">
-                <h2 class="text-center fw-bold mb-2">Hubungi Saya</h2>
-                <p class="text-center text-secondary mb-4">
-                    Silakan isi formulir untuk mengirim pesan.
-                </p>
-                <form id="formKontak" class="mx-auto"
-                      style="max-width: 600px;">
-                    <div class="mb-3">
-                        <label for="nama" class="form-label">
-                            Nama Lengkap
-                        </label>
-                        <input type="text" class="form-control"
-                               id="nama" name="nama"
-                               placeholder="Masukkan nama kamu" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">
-                            Alamat Email
-                        </label>
-                        <input type="email" class="form-control"
-                               id="email" name="email"
-                               placeholder="nama@email.com" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="pesan" class="form-label">
-                            Pesan
-                        </label>
-                        <textarea class="form-control" id="pesan"
-                                  name="pesan" rows="4"
-                                  placeholder="Tuliskan pesan kamu"
-                                  required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        Kirim Pesan
-                    </button>
-                    <div id="hasil" class="mt-3"
-                         role="status" aria-live="polite"></div>
-                </form>
-            </div>
-        </section>
-        <div class="modal fade" id="modalProfil" tabindex="-1"
-             aria-labelledby="judulProfil" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title fs-5" id="judulProfil">
-                            Tentang Saya
-                        </h2>
-                        <button type="button" class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Tutup"></button>
-                    </div>
-                    <div class="modal-body">
-                        Saya mahasiswa Informatika yang sedang belajar
-                        pemrograman dan pengembangan website.
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="modal fade" id="modalProyek1" tabindex="-1"
-             aria-labelledby="judulProyek1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title fs-5" id="judulProyek1">
-                            Website Perpustakaan
-                        </h2>
-                        <button type="button" class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Tutup"></button>
-                    </div>
-                    <div class="modal-body">
-                        Proyek website untuk menampilkan informasi
-                        perpustakaan dan mengelola data anggota.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modalProyek2" tabindex="-1"
-             aria-labelledby="judulProyek2" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title fs-5" id="judulProyek2">
-                            Desain UI/UX
-                        </h2>
-                        <button type="button" class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Tutup"></button>
-                    </div>
-                    <div class="modal-body">
-                        Proyek perancangan tampilan aplikasi agar
-                        lebih mudah dipahami dan digunakan.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modalProyek3" tabindex="-1"
-             aria-labelledby="judulProyek3" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title fs-5" id="judulProyek3">
-                            Program Java
-                        </h2>
-                        <button type="button" class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Tutup"></button>
-                    </div>
-                    <div class="modal-body">
-                        Proyek latihan dasar Java untuk mempelajari
-                        array dan algoritma pengurutan data.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="bg-primary text-white text-center py-3">
+      </section>
+      <section id="tentang" class="section-padding">
         <div class="container">
-            <p class="mb-0">
-                2026 Portofolio Pribadi
-            </p>
+          <h2 class="section-title text-center">Tentang Saya</h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="about-card text-center">
+                <p>
+                  Halo, saya Nurmah, mahasiswa Program Studi Informatika
+                  di Universitas Sulawesi Barat.
+                </p>
+                <p>
+                  Saya sedang mempelajari pengembangan website dan ingin
+                  terus meningkatkan kemampuan saya di bidang teknologi.
+                </p>
+                <p class="fw-bold">NIM: D0225030</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+      </section>
+      <section id="proyek" class="section-padding projects-section">
+        <div class="container">
+          <h2 class="section-title text-center">Proyek Saya</h2>
+          <p class="text-center mb-4">
+            Berikut beberapa proyek yang saya pelajari selama kuliah.
+          </p>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card project-card h-100">
+                <img src="img/perpustakaan.jpeg"
+                class="card-img-top gambar-proyek"
+                alt="Website Perpustakaan">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Website Perpustakaan</h5>
+                  <p class="card-text">
+                    Website sederhana untuk menampilkan informasi
+                    perpustakaan dan mengelola data anggota.
+                  </p>
+                  <button class="btn btn-outline-primary mt-auto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProyek1">
+                  Lihat Proyek
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <img src="img/akademik.png"
+              class="card-img-top gambar-proyek"
+              alt="Portal Akademik">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Portal Akademik</h5>
+                <p class="card-text">
+                  Website untuk menampilkan informasi mahasiswa,
+                  beban studi, nilai akhir, dan pembayaran.
+                </p>
+                <button class="btn btn-outline-primary mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#modalProyek2">
+                Lihat Proyek
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="img/portofolio.png"
+            class="card-img-top gambar-proyek"
+            alt="Portofolio Pribadi">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Portofolio Pribadi</h5>
+              <p class="card-text">
+                Website untuk memperkenalkan diri dan menampilkan
+                proyek yang telah dipelajari.
+              </p>
+              <button class="btn btn-outline-primary mt-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#modalProyek3">
+              Lihat Proyek
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="kontak" class="section-padding">
+  <div class="container">
+    <h2 class="section-title text-center">Hubungi Saya</h2>
+    <p class="text-center mb-4">
+      Ayo saling mengenal lebih lanjut
+      dengan mengisi formulir di bawah ini.
+    </p>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form id="formKontak" class="contact-card" novalidate>
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control"
+            id="nama" required>
+            <div class="invalid-feedback">
+              Nama harus diisi.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control"
+            id="email" required>
+            <div class="invalid-feedback">
+              Masukkan alamat email yang valid.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="pesan" class="form-label">Pesan</label>
+            <textarea class="form-control" id="pesan"
+            rows="4" required></textarea>
+            <div class="invalid-feedback">
+              Pesan harus diisi.
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Kirim Pesan
+          </button>
+          <div id="hasil" class="mt-3" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="informasi" class="info-section section-padding">
+  <div class="container">
+    <h2 class="section-title text-center">
+      Informasi Tambahan
+    </h2>
+    <p class="text-center mb-4">
+      Kegiatan, pengalaman, dan minat saya di luar perkuliahan.
+    </p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Organisasi</h5>
+            <p class="card-text">
+              Saya mengikuti Penamata dan LDK untuk menambah
+              pengalaman, belajar bekerja sama, dan mengembangkan
+              kemampuan diri.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Pengembangan Diri</h5>
+            <p class="card-text">
+              Saat ini saya sedang mendaftar RPI
+              (Relawan Pendidikan Indonesia) sebagai kesempatan
+              untuk belajar dan mendapatkan pengalaman baru.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Hobi</h5>
+            <p class="card-text">
+              Saya senang memasak dan mencoba membuat berbagai
+              jenis makanan. Memasak menjadi kegiatan yang
+              menyenangkan bagi saya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <button type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalSaya">
+        Lihat Informasi Tentang Saya
+      </button>
+    </div>
+  </div>
+</section>
+</main>
+</div>
+</div>
+</section>
+</main>
+<div class="modal fade" id="modalSaya" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Tentang Nurmah</h5>
+        <button type="button" class="btn-close"
+        data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Nama saya Nurmah, mahasiswa Informatika di Universitas
+        Sulawesi Barat. Saya sedang belajar membuat website
+        dan mengembangkan kemampuan di bidang teknologi.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary"
+                data-bs-dismiss="modal">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalProyek1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Website Perpustakaan</h5>
+        <button type="button" class="btn-close"
+                data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                Proyek ini merupakan website sederhana untuk menampilkan
+                informasi perpustakaan, data anggota, dan perhitungan denda.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary"
+                data-bs-dismiss="modal">Tutup</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalProyek2" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Portal Akademik</h5>
+                <button type="button" class="btn-close"
+                data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                Proyek ini berisi halaman untuk menampilkan profil mahasiswa,
+                beban studi, nilai akhir, dan informasi pembayaran.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary"
+                data-bs-dismiss="modal">Tutup</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalProyek3" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                <h5 class="modal-title">Portofolio Pribadi</h5>
+                <button type="button" class="btn-close"
+                 data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  Website ini digunakan untuk memperkenalkan diri,
+                   menampilkan proyek, dan menyediakan formulir kontak.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary"
+                    data-bs-dismiss="modal">Tutup</button>
+                   </div>
+                   </div>
+                  </div>
+                </div>
+                <footer class="footer text-center py-3">
+                  <div class="container">
+                    <small>&copy; 2026 Nurmah | Portofolio Pribadi</small>
+                  </div>
+                </footer>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="script.js"></script>
+              </body>
+            </html>
