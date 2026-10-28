@@ -1,0 +1,123 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background-color: #f0f7ff;
+}
+.navbar {
+    background-color: #1565c0 !important;
+}
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+.navbar .nav-link {
+    color: white !important;
+    transition: 0.3s;
+}
+.navbar .nav-link:hover {
+    color: #bfdbfe !important;
+}
+#beranda {
+    background: linear-gradient(135deg, #dbeafe, #eff6ff) !important;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+#beranda h1 {
+    color: #1e3a8a;
+}
+#beranda h2 {
+    color: #475569 !important;
+}
+#beranda p {
+    line-height: 1.8;
+}
+.btn-primary {
+    background-color: #1565c0;
+    border-color: #1565c0;
+}
+.btn-primary:hover {
+    background-color: #0d47a1;
+    border-color: #0d47a1;
+}
+.btn-outline-primary {
+    color: #1565c0;
+    border-color: #1565c0;
+}
+.btn-outline-primary:hover {
+    background-color: #1565c0;
+    border-color: #1565c0;
+}
+section h2 {
+    color: #1e40af;
+}
+#tentang {
+    background-color: white;
+}
+#proyek {
+    background-color: #eff6ff !important;
+}
+.card {
+    border: 1px solid #dbeafe;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(21, 101, 192, 0.15) !important;
+}
+.card-title {
+    color: #1d4ed8;
+}
+.card-text {
+    color: #475569;
+    line-height: 1.7;
+}
+#kontak {
+    background-color: white;
+}
+#formKontak .form-control {
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    padding: 12px;
+}
+#formKontak .form-control:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.2);
+}
+#formKontak label {
+    color: #1e40af;
+    font-weight: bold;
+}
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.modal-header {
+    background-color: #dbeafe;
+    color: #1e3a8a;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+footer {
+    background-color: #0d47a1 !important;
+    color: white;
+}
+@media (max-width: 576px) {
+    #beranda {
+        padding-top: 65px !important;
+        padding-bottom: 65px !important;
+    }
+    #beranda h1 {
+        font-size: 32px;
+    }
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
