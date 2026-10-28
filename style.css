@@ -1,123 +1,157 @@
-
+:root {
+    --biru-muda: #bde0fe;
+    --biru-latar: #f0f8ff;
+    --biru-tombol: #5dade2;
+    --biru-gelap: #174a70;
+    --biru-judul: #277da1;
+}
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 76px;
 }
 body {
     font-family: Arial, sans-serif;
-    color: #1e293b;
-    background-color: #f0f7ff;
+    color: #333;
+    background-color: #f8fcff;
+    line-height: 1.6;
 }
 .navbar {
-    background-color: #1565c0 !important;
+    background-color: var(--biru-muda);
+    box-shadow: 0 2px 8px rgba(23, 74, 112, 0.1);
 }
-.navbar-brand {
-    font-size: 24px;
-    letter-spacing: 0.5px;
-}
+.navbar-brand,
 .navbar .nav-link {
-    color: white !important;
-    transition: 0.3s;
+    color: var(--biru-gelap) !important;
 }
 .navbar .nav-link:hover {
-    color: #bfdbfe !important;
+    color: #000 !important;
 }
-#beranda {
-    background: linear-gradient(135deg, #dbeafe, #eff6ff) !important;
-    padding-top: 100px !important;
-    padding-bottom: 100px !important;
+.hero-section {
+    padding: 76px 0;
+    background: linear-gradient(135deg, #eaf6ff, #d7edff);
 }
-#beranda h1 {
-    color: #1e3a8a;
-}
-#beranda h2 {
-    color: #475569 !important;
-}
-#beranda p {
-    line-height: 1.8;
-}
-.btn-primary {
-    background-color: #1565c0;
-    border-color: #1565c0;
-}
-.btn-primary:hover {
-    background-color: #0d47a1;
-    border-color: #0d47a1;
-}
-.btn-outline-primary {
-    color: #1565c0;
-    border-color: #1565c0;
-}
-.btn-outline-primary:hover {
-    background-color: #1565c0;
-    border-color: #1565c0;
-}
-section h2 {
-    color: #1e40af;
-}
-#tentang {
-    background-color: white;
-}
-#proyek {
-    background-color: #eff6ff !important;
-}
-.card {
-    border: 1px solid #dbeafe;
-    border-radius: 12px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(21, 101, 192, 0.15) !important;
-}
-.card-title {
-    color: #1d4ed8;
-}
-.card-text {
-    color: #475569;
-    line-height: 1.7;
-}
-#kontak {
-    background-color: white;
-}
-#formKontak .form-control {
-    border: 1px solid #bfdbfe;
-    border-radius: 8px;
-    padding: 12px;
-}
-#formKontak .form-control:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.2);
-}
-#formKontak label {
-    color: #1e40af;
-    font-weight: bold;
-}
-.modal-content {
-    border: none;
-    border-radius: 12px;
-    overflow: hidden;
-}
-.modal-header {
-    background-color: #dbeafe;
-    color: #1e3a8a;
-}
-
-.modal-title {
-    font-weight: bold;
-}
-footer {
-    background-color: #0d47a1 !important;
-    color: white;
-}
-@media (max-width: 576px) {
-    #beranda {
-        padding-top: 65px !important;
-        padding-bottom: 65px !important;
+.foto-profil {
+     width: 180px;
+     height: 180px;
+     object-fit: cover;
+     border-radius: 50%;
+     border: 5px solid #fff;
+     box-shadow: 0 6px 20px rgba(23, 74, 112, 0.15);
     }
-    #beranda h1 {
-        font-size: 32px;
+    .eyebrow {
+        color: var(--biru-judul);
+        font-size: 0.85rem;
+        font-weight: bold;
+        letter-spacing: 2px;
     }
-    .navbar-brand {
-        font-size: 20px;
+    .hero-section h1 {
+        color: var(--biru-gelap);
+        font-size: clamp(2rem, 4vw, 3rem);
     }
-}
+    .subtitle {
+        color: var(--biru-judul);
+    }
+    .section-padding {
+        padding: 70px 0;
+    }
+    .section-title {
+        color: var(--biru-judul);
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .about-card,
+    .contact-card {
+        background-color: #fff;
+        padding: 28px;
+        border-radius: 16px;
+        box-shadow: 0 5px 20px rgba(23, 74, 112, 0.08);
+    }
+    .projects-section {
+        background-color: var(--biru-latar);
+    }
+    .project-card {
+        height: 100%;
+        overflow: hidden;
+        border: 1px solid #e2f0fb;
+        border-radius: 14px;
+        box-shadow: 0 5px 16px rgba(23, 74, 112, 0.08);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 22px rgba(23, 74, 112, 0.14);
+    }
+    .project-card .gambar-proyek {
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .card-title {
+        color: var(--biru-gelap);
+        font-weight: bold;
+    }
+    .btn-primary {
+        background-color: var(--biru-tombol);
+        border-color: var(--biru-tombol);
+    }
+    .btn-primary:hover {
+        background-color: #328bc5;
+        border-color: #328bc5;
+    }
+    .btn-outline-primary {
+        color: var(--biru-judul);
+        border-color: var(--biru-tombol);
+    }
+    .btn-outline-primary:hover {
+        background-color: var(--biru-tombol);
+        border-color: var(--biru-tombol);
+    }
+    .form-control {
+        border-color: #c8e2f5;
+        padding: 10px 12px;
+    }
+    .form-control:focus {
+        border-color: var(--biru-tombol);
+        box-shadow: 0 0 0 0.2rem rgba(93, 173, 226, 0.2);
+    }
+    .info-section {
+        background-color: #eaf6ff;
+        }
+        .modal-content {
+            border: none;
+            border-radius: 14px;
+            overflow: hidden;
+        }
+        .modal-header {
+            background-color: #eaf6ff;
+        }
+        .modal-title {
+            color: var(--biru-gelap);
+            font-weight: bold;
+        }
+        .footer {
+            background-color: var(--biru-muda);
+            color: var(--biru-gelap);
+        }
+        @media (max-width: 767.98px) {
+            .hero-section {
+                padding: 48px 0;
+                text-align: center;
+            }
+            .foto-profil {
+                width: 150px;
+                height: 150px;
+            }
+            .section-padding {
+                padding: 50px 0;
+            }
+            .about-card,
+            .contact-card {
+                padding: 20px;
+            }
+            .project-card .gambar-proyek {
+                height: 200px;
+            }
+        }
